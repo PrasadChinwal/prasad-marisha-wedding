@@ -40,10 +40,12 @@ export function Hero() {
               <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"/>
             </svg>
             <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-              <img
-                className="w-full bg-center bg-clip-content rounded-lg"
-               src="/prasad-marisha.jpeg"
-               alt="Prasad Marisha"
+              <Image
+                height={800}
+                width={600}
+                className="bg-center bg-clip-content rounded-lg"
+                src="/prasad-marisha.jpeg"
+                alt="Prasad Marisha"
               />
             </div>
           </div>
