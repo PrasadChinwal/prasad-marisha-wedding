@@ -4,14 +4,14 @@ import { Tab} from "@headlessui/react"
 import clsx from "clsx";
 import { Container} from "./Container";
 import { ChevronRightIcon} from "./ChevronRightIcon";
-import FatherGroom from "../../public/father-groom.svg"
-import FatherBride from "../../public/father-bride.svg"
-import MotherGroom from "../../public/mother-groom.svg"
-import MotherBride from "../../public/mother-bride.svg"
-import SisterOneGroom from "../../public/sister-groom-1.svg"
-import SisterTwoGroom from "../../public/sister-bride-2.svg"
-import SisterOneBride from "../../public/sister-bride-1.svg"
-import SisterTwoBride from "../../public/sister-bride-2.svg"
+import FatherGroom from "../public/father-groom.svg"
+import FatherBride from "../public/father-bride.svg"
+import MotherGroom from "../public/mother-groom.svg"
+import MotherBride from "../public/mother-bride.svg"
+import SisterOneGroom from "../public/sister-groom-1.svg"
+import SisterTwoGroom from "../public/sister-bride-2.svg"
+import SisterOneBride from "../public/sister-bride-1.svg"
+import SisterTwoBride from "../public/sister-bride-2.svg"
 
 
 const families = [
