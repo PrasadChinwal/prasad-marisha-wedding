@@ -4,11 +4,11 @@ import { Tab} from "@headlessui/react"
 import clsx from "clsx";
 import { Container} from "./Container";
 import { ChevronRightIcon} from "./ChevronRightIcon";
-import FatherGroom from "../public/father-groom.svg"
+import FatherGroom from "../public/father-groom.jpeg"
 import FatherBride from "../public/father-bride.svg"
-import MotherGroom from "../public/mother-groom.svg"
+import MotherGroom from "../public/mother-groom.jpeg"
 import MotherBride from "../public/mother-bride.svg"
-import SisterOneGroom from "../public/sister-groom-1.svg"
+import SisterOneGroom from "../public/sister-groom-1.jpeg"
 import SisterTwoGroom from "../public/sister-bride-2.svg"
 import SisterOneBride from "../public/sister-bride-1.svg"
 import SisterTwoBride from "../public/sister-bride-2.svg"
@@ -105,11 +105,7 @@ export function Family() {
   }, [])
 
   return (
-    <section
-      id="family"
-      aria-labelledby="family-title"
-      className="py-20 sm:py-32"
-    >
+    <section id="family" aria-labelledby="family-title" className="py-20 sm:py-32">
       <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
