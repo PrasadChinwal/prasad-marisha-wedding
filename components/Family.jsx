@@ -186,7 +186,7 @@ export function Family() {
                           className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
                           src={member.image}
                           alt={member.name}
-                          priority
+                          loading={'lazy'}
                           sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                         />
                       </div>

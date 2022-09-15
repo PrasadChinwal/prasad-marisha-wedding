@@ -14,15 +14,27 @@ export function Hero() {
               </span>
               <div
                 className="mt-1 flex flex-col font-mono space-y-1">
-                <span className="text-4xl font-bold tracking-tight text-rose-600">Mr. Prasad Chinwal</span>
+                <span className="text-4xl font-bold tracking-tight text-rose-600">Prasad Chinwal</span>
                 <span className={'text-center text-lg font-bold'}>S/O Ishwar & Parvati Chinwal</span>
                 <span className={'text-center font-bold text-2xl'}>and</span>
-                <span className="text-4xl font-bold tracking-tight text-rose-600">Ms. Marisha Singh</span>
+                <span className="text-4xl font-bold tracking-tight text-rose-600">Marisha</span>
                 <span className={'text-center text-lg font-bold'}>D/O Birendra Kumar & Punam Singh</span>
               </div>
             </h1>
             <p className="mt-3 block font-semibold text-gray-500 text-base sm:mt-5 sm:text-lg lg:text-lg xl:text-xl">
-            January 23rd 2023 at 12.30 PM at Shree Kamakshi temple, Shiroda, Goa.
+              <a className={'underline underline-offset-8'}
+                 href={'/prasad-marisha-wedding.ics'} target={'_blank'}
+                 rel="noreferrer" download
+              >
+                January 23rd 2023 at 12.30 PM
+              </a>
+              <span> at </span>
+              <a className={'underline underline-offset-8'}
+                 target={'_blank'} href={'https://goo.gl/maps/mFsDNXnZ6SbJ9QMf9'}
+                 rel="noreferrer"
+              >
+                 Shree Kamakshi temple, Shiroda, Goa.
+              </a>
             </p>
           </div>
           <div
@@ -43,9 +55,10 @@ export function Hero() {
               <Image
                 height={800}
                 width={600}
-                className="bg-center bg-clip-content rounded-lg"
+                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-center bg-clip-content rounded-lg"
                 src="/prasad-marisha.jpeg"
                 alt="Prasad Marisha"
+                loading={'lazy'}
               />
             </div>
           </div>
