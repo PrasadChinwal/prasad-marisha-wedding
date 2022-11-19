@@ -1,69 +1,70 @@
 import {Container} from "./Container";
-import Image from "next/image";
+import {CalendarIcon} from "./CalendarIcon";
+import {LocationIcon} from "./LocationIcon";
+import Image from 'next/image'
 
 export function Hero() {
-  return (
-    <Container className={'relative'}>
-      <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
-        <div className="place-items-center lg:grid lg:grid-cols-12 lg:gap-8">
-          <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-6">
-            <h1>
-              <span
-                className="block text-base font-semibold text-gray-500 sm:text-lg lg:text-base xl:text-lg">
-                We Request the honor of your presence at the marriage ceremony of
-              </span>
-              <div
-                className="mt-1 flex flex-col font-mono space-y-1">
-                <span className="text-4xl font-bold tracking-tight text-rose-600">Prasad Chinwal</span>
-                <span className={'text-center text-lg font-bold'}>S/O Ishwar & Parvati Chinwal</span>
-                <span className={'text-center font-bold text-2xl'}>and</span>
-                <span className="text-4xl font-bold tracking-tight text-rose-600">Marisha</span>
-                <span className={'text-center text-lg font-bold'}>D/O Birendra Kumar & Punam Singh</span>
-              </div>
-            </h1>
-            <p className="mt-3 block font-semibold text-gray-500 text-base sm:mt-5 sm:text-lg lg:text-lg xl:text-xl">
-              <a className={'underline underline-offset-8'}
-                 href={'/prasad-marisha-wedding.ics'} target={'_blank'}
-                 rel="noreferrer" download
-              >
-                January 23rd 2023 at 12.30 PM
-              </a>
-              <span> at </span>
-              <a className={'underline underline-offset-8'}
-                 target={'_blank'} href={'https://goo.gl/maps/mFsDNXnZ6SbJ9QMf9'}
-                 rel="noreferrer"
-              >
-                 Shree Kamakshi temple, Shiroda, Goa.
-              </a>
-            </p>
-          </div>
-          <div
-            className="overflow-hidden mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-            <svg
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden"
-              width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
-              <defs>
-                <pattern id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e" x="118" y="0" width="20" height="20"
-                         patternUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="4" height="4" className="text-gray-200" fill="currentColor"/>
-                </pattern>
-              </defs>
-              <rect y="72" width="640" height="640" className="text-gray-50" fill="currentColor"/>
-              <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"/>
-            </svg>
-            <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-              <Image
-                height={800}
-                width={600}
-                className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-center bg-clip-content rounded-lg"
-                src="/prasad-marisha.jpeg"
-                alt="Prasad Marisha"
-                loading={'lazy'}
-              />
+    return (
+        <Container className={'py-10'}>
+            <div>
+                <div className="relative">
+                    <div className="absolute inset-x-0 bottom-0 h-1/2 "/>
+                    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                        <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+                            <div className="absolute inset-0">
+                                <Image
+                                    className="h-full w-full object-cover"
+                                    src="/prasad-marisha.jpeg"
+                                    alt="MarishaPrasad"
+                                    layout="fill"
+                                />
+                                <div
+                                    className="absolute bg-cover backdrop-blur-xxs inset-0 bg-rose-300 mix-blend-multiply"/>
+                            </div>
+                            <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                                <p className={'text-center font-semibold text-white tracking-wider'}>We request the
+                                    honor of your presence at the marriage ceremony of</p>
+                                <h1 className="text-center font-bold tracking-tight">
+                                    <span
+                                        className="block text-white font-mono text-4xl sm:text-5xl lg:text-6xl">Prasad</span>
+                                    <span className="block text-white tracking-wider font-mono">S/O Ishwar Chinwal & Parvati Chinwal</span>
+                                    <span className="block text-white tracking-wider font-mono">and</span>
+                                    <span
+                                        className="block text-white font-mono text-4xl sm:text-5xl lg:text-6xl">Marisha</span>
+                                    <span className="block text-white tracking-wider font-mono">D/O Birendra Kumar Singh & Punam Singh</span>
+                                </h1>
+                                <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                                    <div
+                                        className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                                        <div
+                                            className="inline-flex items-center rounded-md border border-transparent px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                            <a
+                                                href={'/prasad-marisha-wedding.ics'} target={'_blank'} rel="noreferrer"
+                                                download
+                                                className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
+                                            >
+                                                <CalendarIcon></CalendarIcon>
+                                                January 23rd, 2023 at 12.30 PM
+                                            </a>
+                                        </div>
+                                        <div
+                                            className="inline-flex items-center rounded-md border border-transparent px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                            <a
+                                                target={'_blank'} href={'https://goo.gl/maps/mFsDNXnZ6SbJ9QMf9'}
+                                                rel="noreferrer"
+                                                className="flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                                            >
+                                                <LocationIcon/>
+                                                Shree Kamakshi temple, Shiroda, Goa.
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </main>
-    </Container>
-  )
+        </Container>
+    )
 }
