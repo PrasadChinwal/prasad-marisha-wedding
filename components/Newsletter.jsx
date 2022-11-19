@@ -36,7 +36,7 @@ export function Newsletter() {
                         <div
                             className="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:col-span-2 lg:mt-0">
                             <div>
-                                <h3 className="text-lg font-medium leading-6 text-gray-900">Groom's Family</h3>
+                                <h3 className="text-lg font-medium leading-6 text-gray-900">Groom&apos;s Family</h3>
                                 <div className="mt-2 text-base text-gray-500">
                                     <p>F2, Prashil Housing Society</p>
                                     <p className="mt-1">Ponda Goa, 403401</p>

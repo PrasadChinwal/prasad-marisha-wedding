@@ -14,7 +14,7 @@ export function Header() {
 
                 <div className="-mx-4
                       flex flex-auto basis-full whitespace-nowrap py-4
-                      font-mono text-sm text-rose-500 sm:-mx-6
+                      font-mono text-sm text-rose-600 sm:-mx-6
                       lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0"
                 >
                     <div className="mx-auto flex flex-col lg:flex-row items-center gap-2 space-x-2 px-4">

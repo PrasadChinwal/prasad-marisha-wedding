@@ -17,6 +17,7 @@ export function Hero() {
                                     src="/prasad-marisha.jpeg"
                                     alt="MarishaPrasad"
                                     layout="fill"
+                                    priority={true}
                                 />
                                 <div
                                     className="absolute bg-cover backdrop-blur-xxs inset-0 bg-rose-300 mix-blend-multiply"/>
