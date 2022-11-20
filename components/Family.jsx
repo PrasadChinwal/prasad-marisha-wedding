@@ -36,7 +36,7 @@ const bride_family = [
         name: 'Birendra Kumar Singh',
         role: 'Father',
         image: 'father-bride.svg',
-        initials: 'BKC',
+        initials: 'BKS',
         color: 'bg-indigo-600'
     },
     {
@@ -65,15 +65,16 @@ const bride_family = [
 export function Family() {
 
     return (
-        <Container>
-            <div className={'grid grid-cols gap-8 my-5'}>
-                <h2 className="text-3xl font-mono font-bold leading-6 text-rose-600 tracking-wide">Family</h2>
+        <div className={'mx-auto max-w-7xl sm:px-6 lg:px-8 px-4'}>
+            <div className={'mx-auto max-w-7xl sm:px-6 lg:px-8 px-4 grid grid-cols gap-8 my-5'}>
+                <h2 className="text-center underline underline-offset-4 md:text-left text-3xl font-mono font-bold leading-6 text-rose-600 tracking-wide">Family</h2>
+                <h2 className={'block md:hidden text-lg font-mono font-bold leading-6 text-rose-600 tracking-wide'}>Groom&apos;s
+                    Family</h2>
                 <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
-                    <h2 className={'block md:hidden text-lg font-mono font-bold leading-6 text-rose-600 tracking-wide'}>Groom&apos;s Family</h2>
                     {groom_family.map((person, index) => (
                         <li key={index} className="col-span-1 flex rounded-md shadow-sm">
                             <div className={
-                                `${person.color} flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md`
+                                `${person.color} rounded-full flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md`
                             }
                             >
                                 {person.initials}
@@ -91,12 +92,13 @@ export function Family() {
                     ))}
                 </ul>
 
+                <h2 className={'block md:hidden text-lg font-mono font-bold leading-6 text-rose-600 tracking-wide'}>Bride&apos;s
+                    Family</h2>
                 <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
-                    <h2 className={'block md:hidden text-lg font-mono font-bold leading-6 text-rose-600 tracking-wide'}>Bride&apos;s Family</h2>
                     {bride_family.map((person, index) => (
                         <li key={index} className="col-span-1 flex rounded-md shadow-sm">
                             <div className={
-                                `${person.color} flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md`
+                                `${person.color} rounded-full flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md`
                             }
                             >
                                 {person.initials}
@@ -114,6 +116,6 @@ export function Family() {
                     ))}
                 </ul>
             </div>
-        </Container>
+        </div>
     )
 }

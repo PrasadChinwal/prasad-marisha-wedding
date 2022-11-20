@@ -1,6 +1,5 @@
-import {CalendarIcon} from "./CalendarIcon";
+import {CalendarIcon, MapPinIcon} from "@heroicons/react/24/solid";
 import {Logo} from "./Logo";
-import {LocationIcon} from "./LocationIcon";
 import {Container} from "./Container";
 
 export function Header() {
@@ -12,20 +11,20 @@ export function Header() {
                     <Logo className="h-12 w-auto text-slate-900"/>
                 </div>
 
-                <div className="-mx-4
-                      flex flex-auto basis-full whitespace-nowrap py-4
-                      font-mono text-sm text-rose-600 sm:-mx-6
-                      lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0"
+                <div className="
+                      flex basis-full whitespace-nowrap py-4
+                      font-mono text-sm text-rose-600
+                      lg:order-none lg:basis-auto lg:border-0 lg:py-0"
                 >
-                    <div className="mx-auto flex flex-col lg:flex-row items-center gap-2 space-x-2 px-4">
-                        <CalendarIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current"/>
+                    <div className="mx-auto flex flex-col lg:flex-row items-center gap-2 space-x-2">
+                        <CalendarIcon className="h-4 w-4"/>
                         <a className={'underline underline-offset-8 cursor-pointer'} href={'/prasad-marisha-wedding.ics'}
                            target={'_blank'}
                            rel="noreferrer" download>
                             <time dateTime="2023-01-23">23 of January, 2023</time>
                         </a>
 
-                        <LocationIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current"/>
+                        <MapPinIcon className="h-4 w-4"/>
                         <a className={'underline underline-offset-8 cursor-pointer'} target={'_blank'}
                            href={'https://goo.gl/maps/mFsDNXnZ6SbJ9QMf9'} rel="noreferrer">
                             Kamakshi Temple, Shiroda, Ponda, Goa

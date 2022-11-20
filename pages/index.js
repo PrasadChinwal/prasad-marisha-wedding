@@ -2,7 +2,7 @@ import Head from 'next/head'
 import {Header} from "../components/Header";
 import {Family} from "../components/Family";
 import {Schedule} from "../components/Schedule";
-import {Newsletter} from "../components/Newsletter";
+import {Contact} from "../components/Contact";
 import {Hero} from "../components/Hero";
 import {Footer} from "../components/Footer";
 
@@ -37,7 +37,7 @@ export default function Home() {
                 <Hero/>
                 <Family/>
                 <Schedule/>
-                <Newsletter/>
+                <Contact/>
                 <Footer/>
             </main>
         </>

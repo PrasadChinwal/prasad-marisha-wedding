@@ -1,6 +1,5 @@
 import {Container} from "./Container";
-import {CalendarIcon} from "./CalendarIcon";
-import {LocationIcon} from "./LocationIcon";
+import {CalendarIcon, MapPinIcon} from '@heroicons/react/24/solid'
 import Image from 'next/image'
 
 export function Hero() {
@@ -38,24 +37,24 @@ export function Hero() {
                                     <div
                                         className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                                         <div
-                                            className="inline-flex items-center rounded-md border border-transparent px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                            className="font-mono tracking-tighter inline-flex items-center rounded-md border border-transparent px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2">
                                             <a
                                                 href={'/prasad-marisha-wedding.ics'} target={'_blank'} rel="noreferrer"
                                                 download
-                                                className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
+                                                className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                                             >
-                                                <CalendarIcon></CalendarIcon>
+                                                <CalendarIcon className={'w-4 h-4 mr-2'}/>
                                                 January 23rd, 2023 at 12.30 PM
                                             </a>
                                         </div>
                                         <div
-                                            className="inline-flex items-center rounded-md border border-transparent px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2">
+                                            className="font-mono tracking-tighter inline-flex items-center rounded-md border border-transparent px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2">
                                             <a
                                                 target={'_blank'} href={'https://goo.gl/maps/mFsDNXnZ6SbJ9QMf9'}
                                                 rel="noreferrer"
-                                                className="flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                                                className="flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                                             >
-                                                <LocationIcon/>
+                                                <MapPinIcon className={'w-4 h-4 mr-2'} />
                                                 Shree Kamakshi temple, Shiroda, Goa.
                                             </a>
                                         </div>
