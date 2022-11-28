@@ -31,7 +31,7 @@ export function Schedule() {
                                     src={item.image} alt={item.name} width="384" height="512"/>
                                 <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                                     <blockquote>
-                                        <p className="text-lg font-medium">
+                                        <p className="font-indie-flower text-4xl font-medium">
                                             {item.name}
                                         </p>
                                     </blockquote>

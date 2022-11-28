@@ -9,7 +9,11 @@ module.exports = {
           backdropBlur: {
               xxs: '1px',
               xs: '2px',
-          }
+          },
+          fontFamily: {
+              'alex-bush': ['"Alex Brush"'],
+              'indie-flower': ['"Indie Flower"', 'cursive'],
+          },
       }
   },
   plugins: [],

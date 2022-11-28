@@ -14,7 +14,7 @@ export function Contact() {
                                 <dl className="mt-2 text-base text-gray-500">
                                     <div className="mt-1">
                                         <dt className="sr-only">Phone number</dt>
-                                        <a href={'tel:+919423812492'} className={'font-mono inline-flex items-center justify-center py-3 text-base font-medium'}>
+                                        <a href={'tel:+919423812492'} className={'my-4 inline-flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'}>
                                             <DevicePhoneMobileIcon className={'w-4 h-4 mr-2'}/>
                                             Call
                                         </a>
@@ -26,7 +26,7 @@ export function Contact() {
                                 <dl className="mt-2 text-base text-gray-500">
                                     <div className="mt-1">
                                         <dt className="sr-only">Phone number</dt>
-                                        <a href={'tel:+919423812492'} className={'font-mono inline-flex items-center justify-center py-3 text-base font-medium'}>
+                                        <a href={'tel:+919423812492'} className={'my-4 inline-flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'}>
                                             <DevicePhoneMobileIcon className={'w-4 h-4 mr-2'}/>
                                             Call
                                         </a>
@@ -48,7 +48,7 @@ export function Contact() {
                                 </div>
                                 <a target={'_blank'} href={'https://goo.gl/maps/UoTKpxRi83SzeViv9'}
                                     rel="noreferrer"
-                                    className={'inline-flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'}>
+                                    className={'my-4 inline-flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'}>
                                     <MapPinIcon className="h-4 w-4 mr-2"/>
                                     Click to check location
                                 </a>
@@ -61,7 +61,7 @@ export function Contact() {
                                 </div>
                                 <a target={'_blank'} href={'https://goo.gl/maps/mFsDNXnZ6SbJ9QMf9'}
                                    rel="noreferrer"
-                                   className={'inline-flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'}>
+                                   className={'my-4 inline-flex items-center justify-center rounded-md border border-transparent bg-rose-700 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'}>
                                     <MapPinIcon className="h-4 w-4 mr-2" aria-hidden="true"/>
                                     Click to check location
                                 </a>
